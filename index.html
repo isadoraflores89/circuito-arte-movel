@@ -148,6 +148,12 @@
   .cotas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
   @media(max-width:960px){.cotas-grid{grid-template-columns:repeat(2,1fr)}}
   @media(max-width:520px){.cotas-grid{grid-template-columns:1fr}}
+  .floating-cta{position:fixed;bottom:24px;right:24px;width:60px;height:60px;background:linear-gradient(135deg,var(--terra),var(--terra-dark));border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(192,86,47,.3);text-decoration:none;color:#fff;font-size:28px;z-index:40;transition:.3s ease;animation:pulse-btn 2s infinite}
+  .floating-cta:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(192,86,47,.4)}
+  @keyframes pulse-btn{0%{box-shadow:0 4px 20px rgba(192,86,47,.3)}50%{box-shadow:0 4px 30px rgba(192,86,47,.5)}100%{box-shadow:0 4px 20px rgba(192,86,47,.3)}}
+  .floating-label{position:absolute;right:80px;background:#fff;padding:8px 14px;border-radius:8px;white-space:nowrap;font-size:0.9rem;color:var(--ink);font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.1);pointer-events:none;opacity:0;transition:.3s}
+  .floating-cta:hover .floating-label{opacity:1}
+  @media(max-width:520px){.floating-cta{bottom:16px;right:16px;width:56px;height:56px;font-size:24px}.floating-label{display:none}}
   .cota{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column;position:relative;overflow:hidden}
   .cota .tier-top{height:6px;margin:-28px -24px 20px}
   .cota.master{border:2px solid var(--amber);box-shadow:var(--shadow)}
@@ -198,7 +204,7 @@
       <a href="#equipe">Equipe</a>
       <a href="#imprensa">Imprensa</a>
       <a href="#oficial">Autorização</a>
-      <a href="#cotas">Cotas</a>      <a href="#diario-oficial">Diário Oficial</a>
+      <a href="#cotas">Cotas</a>      <a href="#apoiadores-lista">Apoiadores</a>      <a href="#diario-oficial">Diário Oficial</a>
       <a href="#contato">Patrocine</a>
     </nav>
   </div>
@@ -478,6 +484,19 @@
           <li>Menção como apoiador nas divulgações</li>
           <li>Citação nas redes sociais</li>
         </ul>
+      <div class="cota individual">
+        <div class="tier-top"></div>
+        <h3>Apoiador Individual</h3>
+        <div class="pct">Pessoa física</div>
+        <div class="val">A partir de R$ 200</div>
+        <div class="valsub">seu nome no site</div>
+        <ul>
+          <li>Nome publicado na página de agradecimentos</li>
+          <li>Certificado de apoiador</li>
+          <li>Acesso ao relatório final de impacto</li>
+          <li>Benefício fiscal (até R$ 60 de deduções)</li>
+        </ul>
+      </div>
       <div class="cota pme">
         <div class="tier-top"></div>
         <h3>PME</h3>
@@ -545,6 +564,20 @@
       <a href="https://wa.me/5571982366302" target="_blank" rel="noopener"><span>PRODUÇÃO · IANA MUTHE</span>(71) 98236-6302 · WhatsApp</a>
       <a href="mailto:producao@isadoraflores.art.br"><span>E-MAIL · PRODUÇÃO</span>producao@isadoraflores.art.br</a>
       <a href="#cotas"><span>CONTA DE CAPTAÇÃO</span>BB Ag. 0381-6 · C/C 93.320-1</a>
+    </div>    <div style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 1px solid #eee1d3">
+      <p style="margin-bottom: 20px; color: #6f655d">Quer levar o Plano de Captação completo?</p>
+      <a href="plano-de-captacao.pdf" download class="btn">Baixar Plano de Captação (PDF)</a>
+    </div>
+  </div>
+</section>
+
+<section style="background: linear-gradient(160deg, var(--terra) 0%, var(--terra-dark) 100%); color: #fff; padding: 80px 0; text-align: center">
+  <div class="wrap">
+    <h2 style="font-size: 2.5rem; margin-bottom: 24px">Vamos conversar?</h2>
+    <p style="font-size: 1.15rem; max-width: 600px; margin: 0 auto 40px; opacity: 0.95">Tem dúvidas sobre as cotas, quer patrocinar ou conhecer melhor o projeto?</p>
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap">
+      <a href="#cotas" class="btn btn-ghost" style="background: rgba(255,255,255,.12)">Ver cotas de patrocínio</a>
+      <a href="https://wa.me/5541996463700?text=Olá! Tenho interesse no Circuito Arte Móvel" target="_blank" rel="noopener" class="btn" style="background: #25d366; border: none">WhatsApp (41) 99646-3700</a>
     </div>
   </div>
 </section>
@@ -562,6 +595,11 @@
     </div>
   </div>
 </footer>
+
+<a href="#cotas" class="floating-cta" title="Quero apoiar">
+  <span style="font-size: 32px">❤️</span>
+  <span class="floating-label">Quero apoiar</span>
+</a>
 
 </body>
 </html>
