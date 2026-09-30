@@ -154,8 +154,8 @@
   .floating-label{position:absolute;right:80px;background:#fff;padding:8px 14px;border-radius:8px;white-space:nowrap;font-size:0.9rem;color:var(--ink);font-weight:600;box-shadow:0 2px 12px rgba(0,0,0,.1);pointer-events:none;opacity:0;transition:.3s}
   .floating-cta:hover .floating-label{opacity:1}
   @media(max-width:520px){.floating-cta{bottom:16px;right:16px;width:56px;height:56px;font-size:24px}.floating-label{display:none}}
-  .cota.pme,.cota.individual{opacity:.88;border:1px solid #ddd}
-  .cota.pme .tier-top,.cota.individual .tier-top{opacity:.7}
+  .cota.apoio,.cota.individual{opacity:.88;border:1px solid #ddd}
+  .cota.apoio .tier-top,.cota.individual .tier-top{opacity:.7}
   .cota{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 24px;display:flex;flex-direction:column;position:relative;overflow:hidden}
   .cota .tier-top{height:6px;margin:-28px -24px 20px}
   .cota.master{border:2px solid var(--amber);box-shadow:var(--shadow)}
@@ -163,6 +163,7 @@
   .cota.ouro .tier-top{background:var(--amber)}
   .cota.prata .tier-top{background:var(--blueA2)}
   .cota.bronze .tier-top{background:#b07a44}
+  .cota.parceiro .tier-top{background:#2c8a6d}
   .cota .flag{position:absolute;top:14px;right:-34px;background:var(--terra);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:1px;padding:5px 40px;transform:rotate(45deg)}
   .cota h3{font-size:1.3rem;color:var(--blueA)}
   .cota .pct{color:var(--muted);font-weight:700;font-size:.85rem;margin-top:2px}
@@ -521,6 +522,31 @@
           <li>Citação nas redes sociais</li>
         </ul>
       </div>
+      <div class="cota parceiro">
+        <div class="tier-top"></div>
+        <h3>Parceiro</h3>
+        <div class="pct">Empresas</div>
+        <div class="val">R$ 10 mil a 50 mil</div>
+        <div class="valsub">cota de parceria</div>
+        <ul>
+          <li>Logo em materiais de apoio</li>
+          <li>Menção como empresa parceira nas divulgações</li>
+          <li>Citação nas redes sociais</li>
+        </ul>
+      </div>
+      <div class="cota apoio">
+        <div class="tier-top"></div>
+        <h3>Apoio</h3>
+        <div class="pct">Empresas</div>
+        <div class="val">R$ 7 mil a 10 mil</div>
+        <div class="valsub">apoio direto</div>
+        <ul>
+          <li>Logo no site do projeto</li>
+          <li>Menção como apoiador</li>
+          <li>Citação nas redes sociais</li>
+          <li>Relatório resumido de impacto</li>
+        </ul>
+      </div>
       <div class="cota individual">
         <div class="tier-top"></div>
         <h3>Apoiador Individual</h3>
@@ -532,19 +558,6 @@
           <li>Certificado de apoiador</li>
           <li>Acesso ao relatório final de impacto</li>
           <li>Dedução no Imposto de Renda (até 6% do imposto devido)</li>
-        </ul>
-      </div>
-      <div class="cota pme">
-        <div class="tier-top"></div>
-        <h3>PME</h3>
-        <div class="pct">Pequenas empresas</div>
-        <div class="val">R$ 7.000 — R$ 10.000</div>
-        <div class="valsub">apoio direto</div>
-        <ul>
-          <li>Logo em materiais de divulgação</li>
-          <li>Menção como apoiador patrocinador</li>
-          <li>Citação nas redes sociais</li>
-          <li>Relatório resumido de impacto</li>
         </ul>
       </div>
     </div>
