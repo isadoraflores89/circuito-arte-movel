@@ -190,6 +190,15 @@
   footer{background:var(--blueA);color:#dcecf8;padding:34px 0;font-size:.85rem}
   footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   footer b{color:#fff}
+  .captacao{max-width:820px;margin:0 auto 40px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px 26px;box-shadow:0 6px 20px rgba(0,0,0,.05)}
+  .cap-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+  .cap-lbl{font-size:.85rem;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--terra)}
+  .cap-val{font-size:1.15rem;color:var(--ink)}
+  .cap-val b{font-size:1.5rem;color:var(--blueA)}
+  .cap-bar{height:22px;background:#f1e8de;border-radius:40px;overflow:hidden}
+  .cap-fill{height:100%;border-radius:40px;background:linear-gradient(90deg,var(--amber),var(--terra))}
+  .cap-foot{margin-top:10px;font-size:.95rem;color:var(--muted)}
+  .cap-foot a{color:var(--terra);font-weight:700}
   .parceiros1{background:#fff}
   .parceiros1 .plbl{text-align:center;font-size:.8rem;letter-spacing:2px;text-transform:uppercase;font-weight:800;color:var(--blue);margin:8px 0 14px}
   .parceiros1 .logos{display:grid;gap:18px;max-width:1000px;margin:0 auto 34px}
@@ -463,6 +472,17 @@
       <h2>Escolha o nível de participação da sua marca</h2>
       <p>Valor total do projeto aprovado: <b>R$ 549.120,00</b>. As contrapartidas são cumulativas e crescem conforme a cota.</p>
     </div>
+    <div class="captacao" id="captacao">
+      <div class="cap-row">
+        <span class="cap-lbl">Captação em andamento</span>
+        <span class="cap-val"><b>R$ 3.800</b> de R$ 549.120</span>
+      </div>
+      <div class="cap-bar" role="progressbar" aria-label="Valor captado" aria-valuemin="0" aria-valuemax="549120" aria-valuenow="3800" aria-valuetext="R$ 3.800 captados de R$ 549.120">
+        <div class="cap-fill" style="width:max(2%,0.69%)"></div>
+      </div>
+      <div class="cap-foot">0,7% da meta · captação aberta até 31/12/2026 · <a href="#contato">seja o próximo patrocinador</a></div>
+    </div>
+    
     <div class="cotas-grid">
       <div class="cota master">
         <div class="tier-top"></div>
